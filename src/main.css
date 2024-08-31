@@ -211,15 +211,6 @@ Content Components
   padding-bottom: 20px;
 }
 
-.showcase-item {
-  background: #333333;
-  box-shadow: 0 0 10px 0 #222222;
-  border-radius: 10px;
-  min-height: 80px;
-  width: 100%;
-  outline: 1px solid #3a3a3a;
-}
-
 h4 {
     display: inline-flex;
     align-items: center;
@@ -287,6 +278,78 @@ button {
   min-height: 200px;
   background: #272727;
   border-radius: 10px;
+}
+
+.showcase-item {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: #333333;
+  box-shadow: 0 0 10px 0 #222222;
+  border-radius: 10px;
+  width: 100%;
+  outline: 1px solid #3a3a3a;
+  padding: 20px 0;
+}
+
+.showcase-item .showcase-image {
+  display: inline-flex;
+  height: 100px;
+  width: 100px;
+  background: #222222;
+  border-radius: 500px;
+  margin-left: 20px;
+}
+
+.showcase-item .content {
+  display: inline-flex;
+  flex-direction: column; 
+  gap: 2px;
+}
+
+.showcase-item h1 {
+  font-size: 20px;
+  font-family: Lato;
+  color: white;
+  margin: 0;
+  font-weight: 500;
+}
+
+.showcase-item h2 {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: Lato;
+  color: white;
+  font-weight: 300;
+}
+
+.showcase-item .tags {
+  margin-top: 10px;
+  list-style-type: none;
+  color: white;
+  font-size: 12px;
+  letter-spacing: .2em;
+  font-weight: 600;
+  font-family: Lato;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  opacity: .2;
+  gap: 5px;
+}
+
+.showcase-item .arrow {
+  position: absolute;
+  display: flex;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  float: right;
+  color: white;
+  font-size: 30px;
 }
 
 /*
