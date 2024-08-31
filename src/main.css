@@ -26,7 +26,9 @@ Navigation Components
 
 .navigation-menu-left {
     display: flex;
+    gap: 10px;
     align-items: center;
+    margin-left: 10px;
 }
 
 .navigation-menu-right {
@@ -36,16 +38,26 @@ Navigation Components
 
 .navigation-menu-icon {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     height: 20px;
+    color: white;
     width: 20px;
     padding: 10px;
     border-radius: 20px;
+    background: #272727;
     transition: background .5s;
     cursor: pointer;
 }
 
+.navigation-menu-icon:hover {
+    background-color: #2B2B2B;
+    transition: background .5s;
+}
+
 .inactive {
+    background: transparent;
     opacity: .5;
 }
 
@@ -126,7 +138,7 @@ Content Components
     align-items: center;
 }
 
-.persona-section {
+.persona-area {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -144,7 +156,7 @@ Content Components
 .description {
     color: white;
     font-family: Noto Sans;
-    margin-top: 0;
+    margin-top: 30px;
     font-size: 15px;
     font-weight: 200;
     width: 80%;
@@ -152,7 +164,7 @@ Content Components
 
 .profile {
     height: auto;
-    width: 20%;
+    width: 15vw;
     border-radius: 500px;
     outline: 10px solid #2B2B2B
 }
@@ -190,14 +202,46 @@ h4 {
     margin-left: calc(50vw/2);
 }
 
+.button-group {
+  margin-top: 20px;
+}
+
+button {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+  background: #272727;
+  outline: 1.2px solid #3a3a3a;
+  border-radius: 5px;
+  color: white;
+  font-family: Lato;
+  margin-right: 5px;
+  border: 0;
+  padding: 7.5px 10px;
+  box-shadow: 0 2px 20px solid #111111;
+  font-weight: 600;
+  transition: background .2s;
+}
+
+.button-hover:hover {
+  background: #111111;
+  transition: background .2s;
+}
+
+.dark-button-hover:hover {
+  background: #111111;
+  transition: background .2s;
+}
+
+.dark {
+  background: rgba(5,5,5,.1);
+}
+
 /*
 Mobile Styles
 */
-
-.navigation-menu-icon:hover {
-    background-color: #2B2B2B;
-    transition: background .5s;
-}
 
 @media screen and (max-width: 1000px) {
     .navigation-menu {
