@@ -89,22 +89,40 @@ Navigation Components
 }
 
 #home {
-    margin-left: 20px;
-    background-image: url('images/home.svg');
+    margin-left: 10px;
+    background-image: url('images/house.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: content-box;
 }
 
-#user {
-    background-image: url('images/user.svg');
+#showcase {
+    background-image: url('images/showcase.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: content-box;
 }
 
-#code {
-    background-image: url('images/code.svg');
+#profile {
+    background-image: url('images/profile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+#email {
+    width: 15px;
+    height: 15px;
+    background-image: url('images/email.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+
+#discord {
+    width: 15px;
+    height: 15px;
+    background-image: url('images/discord.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: content-box;
@@ -121,6 +139,7 @@ Navigation Components
     cursor: pointer;
     box-shadow: 0 2px 2px #111111;
     font-family: Lato;
+    letter-spacing: .01em;
     font-size: 12px;
 }
 
@@ -241,7 +260,7 @@ h4 {
 button {
   display: inline-flex;
   justify-content: space-between;
-  gap: 5px;
+  gap: 8px;
   align-items: center;
   cursor: pointer;
   background: #272727;
@@ -348,8 +367,24 @@ button {
   bottom: 0;
   align-items: center;
   float: right;
-  color: white;
-  font-size: 30px;
+}
+
+.inner-arrow {
+  height: 30px;
+  width: 30px;
+  background: url("./images/arrow.svg");
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  transition: all .2s;
+}
+
+
+.inner-arrow:hover {
+  height: 35px;
+  width: 35px;
+  transition: all .2s;
 }
 
 /*
