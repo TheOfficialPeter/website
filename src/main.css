@@ -166,6 +166,14 @@ Content Components
     margin-right: 50px;
 }
 
+.persona-area-left {
+  justify-content: flex-start;
+
+  .description {
+    width: 75%;
+  }
+}
+
 .name {
     color: white;
     font-family: Noto Sans;
