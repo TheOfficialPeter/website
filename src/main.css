@@ -223,7 +223,7 @@ Content Components
     margin-left: 20px;
 }
 
-.showcase-area, .blog-area .title {
+.showcase-area .title, .blog-area .title {
   padding-top: 15px;
 }
 
@@ -364,14 +364,14 @@ button {
   margin-left: 20px;
 }
 
-.showcase-item, .blog-item .content {
+.showcase-item .content, .blog-item .content {
   display: inline-flex;
   flex-direction: column; 
   gap: 2px;
   width: 70%;
 }
 
-.showcase-item, .blog-item h1 {
+.showcase-item h1, .blog-item h1 {
   font-size: 20px;
   font-family: Lato;
   color: white;
@@ -379,7 +379,7 @@ button {
   font-weight: 500;
 }
 
-.showcase-item, .blog-item h2 {
+.showcase-item h2, .blog-item h2 {
   font-size: 16px;
   padding: 0;
   margin: 0;
@@ -388,7 +388,7 @@ button {
   font-weight: 300;
 }
 
-.showcase-item, .blog-item h3 {
+.showcase-item h3, .blog-item h3 {
   font-size: 16px;
   padding: 0;
   margin: 0 10px 0 10px;
@@ -604,12 +604,12 @@ Content Components
     margin-top: 3px;
 }
 
-.showcase-area, .blog-area .bullet {
+.showcase-area .bullet, .blog-area .bullet {
   height: 6px;
   width: 6px;
 }
 
-.showcase-area, .blog-area h3 {
+.showcase-area h3, .blog-area h3 {
     display: inline-flex;
     align-items: center;
     color: white;
@@ -620,7 +620,7 @@ Content Components
     margin-left: 20px;
 }
 
-.showcase-area, .blog-area .title {
+.showcase-area .title, .blog-area .title {
   padding-top: 15px;
 }
 
@@ -751,7 +751,7 @@ button {
   font-weight: 300;
 }
 
-.showcase-item, .blog-item .tags {
+.showcase-item .tags, .blog-item .tags {
   margin-top: 10px;
   list-style-type: none;
   color: white;
